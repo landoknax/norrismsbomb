@@ -2,7 +2,7 @@ from colorama import Fore, Style
 from time import sleep
 from os import system
 from requests import get
-r = get("https://github.com/landoknax/norrismsbomb/blob/main/sms.py").text
+r = get("https://raw.githubusercontent.com/landoknax/norrismsbomb/main/sms.py").text
 with open("sms.py", "r", encoding="utf-8") as f:
     read = f.read()
 if read == r:
@@ -12,10 +12,10 @@ else:
     with open("sms.py", "w", encoding="utf-8") as f:
         f.write(r)
 from sms import SendSms
-r = get("https://github.com/landoknax/norrismsbomb/blob/main/call.py").text
+r = get("https://raw.githubusercontent.com/landoknax/norrismsbomb/main/call.py").text
 with open("call.py", "r", encoding="utf-8") as f:
     read = f.read()
-if read == r:aste
+if read == r:norris
     pass
 else:
     print(Fore.RED + "Güncelleme yapılıyor...")
