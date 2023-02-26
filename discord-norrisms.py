@@ -1,7 +1,7 @@
 import discord
 from time import sleep
 from requests import get
-r = get("https://raw.githubusercontent.com/asteeq/aste-sms-bomber/main/sms.py").text
+r = get("https://github.com/landoknax/norrismsbomb/blob/main/sms.py").text
 with open("sms.py", "r", encoding="utf-8") as f:
     read = f.read()
 if read == r:
@@ -23,7 +23,7 @@ client = discord.Client(intents=intents)
 @client.event
 async def on_ready():
     print('{} Çalışmaya Başladı!'.format(client.user))
-    activity = discord.Activity(type=discord.ActivityType.playing, name="https://github.com/tingirifistik/aste-sms-bomber")
+    activity = discord.Activity(type=discord.ActivityType.playing, name="https://github.com/landoknax/norrismsbomb")
     await client.change_presence(activity=activity)
     
 @client.event

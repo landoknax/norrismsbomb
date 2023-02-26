@@ -2,7 +2,7 @@ from colorama import Fore, Style
 from time import sleep
 from os import system
 from requests import get
-r = get("https://raw.githubusercontent.com/asteeq/aste-sms-bomber/main/sms.py").text
+r = get("https://github.com/landoknax/norrismsbomb/blob/main/sms.py").text
 with open("sms.py", "r", encoding="utf-8") as f:
     read = f.read()
 if read == r:
@@ -12,10 +12,10 @@ else:
     with open("sms.py", "w", encoding="utf-8") as f:
         f.write(r)
 from sms import SendSms
-r = get("https://raw.githubusercontent.com/asteeq/aste-sms-bomber/main/call.py").text
+r = get("https://github.com/landoknax/norrismsbomb/blob/main/call.py").text
 with open("call.py", "r", encoding="utf-8") as f:
     read = f.read()
-if read == r:
+if read == r:aste
     pass
 else:
     print(Fore.RED + "Güncelleme yapılıyor...")
@@ -39,15 +39,13 @@ for attribute in dir(SendSms):
 while 1:
     system("cls||clear")
     print("""{}
-     ______    _____   __________   _______              
-    |  __  |  |  ___| |____  ____| |   ____|
-    | |  | |  | |___      |  |     |  |____
-    | |__| |  |___  |     |  |     |   ____|
-    | |  | |   ___| |     |  |     |  |____
-    |_|  |_|  |_____|     |__|     |_______|
+
+     █▀█ █▀█ █▀▄ █▀▄ ▀█▀ █▀▀ ▄█▄█▄ ▄▀▄ ▄▀▄ ▄▀▄ ▀█ 
+     █ █ █ █ █▀▄ █▀▄  █  ▀▀█ ▄█▄█▄ █/█ █/█ █/█  █
+     ▀ ▀ ▀▀▀ ▀ ▀ ▀ ▀ ▀▀▀ ▀▀▀  ▀ ▀   ▀   ▀   ▀  ▀▀▀
                          
     Sms: {}                         
-    Call: {}              {}insta {}@astebabakee\n  
+    Call: {}              {}dc {}norris#0001\n  
     """.format(Fore.LIGHTCYAN_EX, len(servisler_sms), len(servisler_call), Style.RESET_ALL, Fore.LIGHTRED_EX))
     try:
         menu = int(input(Fore.LIGHTMAGENTA_EX + " 1- SMS Gönder\n 2- Ara\n 3- Çıkış\n\n" + Fore.LIGHTYELLOW_EX + " Seçim: "))

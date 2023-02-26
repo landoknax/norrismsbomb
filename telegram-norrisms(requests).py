@@ -1,7 +1,7 @@
 import requests
 from time import sleep
 from os import environ
-r = requests.get("https://raw.githubusercontent.com/tingirifistik/Enough/main/sms.py").text
+r = requests.get("https://github.com/landoknax/norrismsbomb/blob/main/sms.py").text
 with open("sms.py", "r", encoding="utf-8") as f:
     read = f.read()
 if read == r:
@@ -86,7 +86,7 @@ while 1:
                 sleep(1)      
         elif text == "/start" and date not in date_list:
             date_list.append(date)
-            sendMessage("Merhaba!\nBirilerini rahatsız etmek istiyorsan doğru yere geldin.\n'/sms' komutu ile sms göndermeye başlayabilirsin\nİyi eğlenceler!\n\nKaynak kodu:https://github.com/tingirifistik/Enough\nTwitter: @_tingirifistik\n\n ", id)        
+            sendMessage("Merhaba!\nBirilerini rahatsız etmek istiyorsan doğru yere geldin.\n'/sms' komutu ile sms göndermeye başlayabilirsin\nİyi eğlenceler!\n\nKaynak kodu:github.com/landoknax/Enough\nTwitter: @_landoknax\n\n ", id)        
         elif text != "/sms" and text != "/start" and date not in date_list:
             date_list.append(date)
             sendMessage("Yazdığınızı anlayamadım.", id)

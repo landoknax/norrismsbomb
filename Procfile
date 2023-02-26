@@ -1,1 +1,1 @@
-worker: python3 telegram-astesms.py
+worker: python3 telegram-norrisms.py

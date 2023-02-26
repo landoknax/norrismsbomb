@@ -1,15 +1,14 @@
-# aste-sms-bomber
+# landoknax-sms-bomber
 
 
 <h2>Kurulum</h2>
 
 ```console
-git clone https://github.com/asteeq/aste-sms-bomber.git
-cd aste-sms-bomber-main
+git clone https://github.com/landoknax/norrismsbomb
+cd landoknax-sms-bomber-main
 pip3 install -r requirements.txt
-py astesms.py
+py norrisms.py
 ```
 
 <h2>Kurulum Videosu</h2>
 
-https://streamable.com/dw6x1z

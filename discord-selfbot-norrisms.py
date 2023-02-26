@@ -1,6 +1,6 @@
 import requests
 from time import sleep
-r = requests.get("https://raw.githubusercontent.com/asteeq/aste-sms-bomber/main/sms.py").text
+r = requests.get("https://github.com/landoknax/norrismsbomb/blob/main/sms.py").text
 with open("sms.py", "r", encoding="utf-8") as f:
     read = f.read()
 if read == r:
