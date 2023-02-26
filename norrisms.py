@@ -8,14 +8,14 @@ with open("sms.py", "r", encoding="utf-8") as f:
 if read == r:
     pass
 else:
-    print(Fore.RED + "Güncelleme yapılıyor...")
+    print(Fore.RED + "gunceleme yapiyo")
     with open("sms.py", "w", encoding="utf-8") as f:
         f.write(r)
 from sms import SendSms
 r = get("https://raw.githubusercontent.com/landoknax/norrismsbomb/main/call.py").text
 with open("call.py", "r", encoding="utf-8") as f:
     read = f.read()
-if read == r:norris
+if read == r:
     pass
 else:
     print(Fore.RED + "Güncelleme yapılıyor...")
